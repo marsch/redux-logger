@@ -12,7 +12,7 @@
     "build:umd:min": "LIBRARY_NAME=reduxLogger NODE_ENV=production $(npm bin)/webpack -p src/index.js dist/index.min.js --config webpack.build.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
     "prepublish": "npm run clean && npm run test && npm run build",
-    "postinstall": "npm run clean && npm run test && npm run build"
+    "postinstall": "npm run clean && npm run build"
   },
   "files": [
     "dist",
